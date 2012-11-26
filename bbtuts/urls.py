@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
     # Custom apps URLs:
-    (r'^contacts/', include('bbtuts.contacts.urls')),
+    (r'^contacts/?', include('bbtuts.contacts.urls')),
     (r'^$', 'bbtuts.contacts.views.home'),
 
 )
